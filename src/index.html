@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miiaw</title>
   </head>
-  <body>
-    <h1 class="text-4xl">Spar 40 % på prøvepakken tilpasset din kats månedlige behov.</h1>
-    <h2 class="text-xl">Har du flere katte? Bestil prøvepakken og kontakt kundeservice@miiaw.dk for tilbud</h2>
+  <body class="container ml-auto mr-auto grid grid-cols-1">
+    <h1 class="text-4xl justify-self-center">Spar 40 % på prøvepakken tilpasset din kats månedlige behov</h1>
+    <h2 class="text-xl justify-self-center">Har du flere katte? Bestil prøvepakken og kontakt kundeservice@miiaw.dk for tilbud</h2>
     <form>
+      <div class="mt-10 mb-10">
       <label for="tentacles">Alder</label>
       <input type="number" id="tentacles" name="tentacles" min="10" max="100" />
 
-      <button>Vælg</button>
+      <button class="btn">Vælg</button>
+</div>
 
-      <fieldset>
+      <fieldset class="mt-10 mb-10 ">
         <legend>Er katten steriliseret?</legend>
 
         <div>
@@ -49,28 +51,32 @@
         <option value="10+">Over 10 kg</option>
       </select>
 
-      <fieldset>
-        <legend>Smag</legend>
+      <fieldset class="mt-10 mb-10">
+        <legend class="text-2xl">Smag</legend>
 
-        <div>
-          <input type="checkbox" id="kød" name="kød" checked />
-          <label for="kød">Køb</label>
-        </div>
+       <div class="form-control">
+          <label class="cursor-pointer label" for="kød">
+          <span class="label-text">Kød</span>
+          <input type="checkbox" id="kød" name="kød" class="checkbox checkbox-success"/>
+       </label> </div>
 
-        <div>
-          <input type="checkbox" id="vegetar" name="vegetar" />
-          <label for="vegetar">Vegetar</label>
-        </div>
+        <div class="form-control">
+          <label class="cursor-pointer label" for="vegetar">
+          <span class="label-text">Vegetar</span>
+          <input type="checkbox" id="vegetar" name="vegetar" class="checkbox checkbox-success"/>
+       </label> </div>
 
-        <div>
-          <input type="checkbox" id="fisk" name="fisk" />
-          <label for="fisk">Fisk</label>
-        </div>
+       <div class="form-control">
+          <label class="cursor-pointer label" for="fisk">
+          <span class="label-text">Fisk</span>
+          <input type="checkbox" id="fisk" name="fisk" class="checkbox checkbox-success"/>
+       </label> </div>
 
-        <div>
-          <input type="checkbox" id="fjerkræ" name="fjerkræ" />
-          <label for="fjerkræ">Fjerkræ</label>
-        </div>
+        <div class="form-control">
+          <label class="cursor-pointer label" for="fjerkræ">
+          <span class="label-text">Fjerkræ</span>
+          <input type="checkbox" id="fjerkræ" name="fjerkræ" class="checkbox checkbox-success"/>
+       </label> </div>
       </fieldset>
     </form>
 

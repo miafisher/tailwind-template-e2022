@@ -8,10 +8,29 @@
   </head>
   <body>
     <form>
-      <label for="tentacles">Vægt</label>
+      <label for="tentacles">Alder</label>
       <input type="number" id="tentacles" name="tentacles" min="10" max="100" />
 
       <button>Vælg</button>
+
+      <fieldset>
+        <legend>Er katten steriliseret?</legend>
+
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">Ja</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Nej</label>
+        </div>
+
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie" />
+          <label for="louie">Ved ikke</label>
+        </div>
+      </fieldset>
     </form>
     <script type="module" src="./main.js"></script>
   </body>
